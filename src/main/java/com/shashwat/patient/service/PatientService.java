@@ -14,9 +14,6 @@ public class PatientService {
     @Autowired
     PatientRepository repo;
 
-    @Autowired
-    RestTemplate restTemplate;
-
     public Patient savePatient(Patient patient) {
        return repo.save(patient);
     }
