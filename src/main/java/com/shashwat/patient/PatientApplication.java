@@ -12,9 +12,4 @@ public class PatientApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PatientApplication.class, args);
 	}
-	@Bean
-	@LoadBalanced
-	public RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
 }
